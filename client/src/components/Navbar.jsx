@@ -30,10 +30,10 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   const dispatch = useDispatch();
   const theme = useTheme();
 
-//   const [anchorEl, setAnchorEl] = useState(null);
-//   const isOpen = Boolean(anchorEl);
-//   const handleClick = (event) => setAnchorEl(event.currentTarget);
-//   const handleClose = () => setAnchorEl(null);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const isOpen = Boolean(anchorEl);
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
 
   return (
     <AppBar
@@ -75,7 +75,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
             <SettingsOutlined sx={{ fontSize: "25px" }} />
           </IconButton>
 
-          {/* <FlexBetween>
+          <FlexBetween>
             <Button
               onClick={handleClick}
               sx={{
@@ -122,7 +122,8 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
             >
               <MenuItem onClick={handleClose}>Log Out</MenuItem>
             </Menu>
-          </FlexBetween> */}
+          </FlexBetween>
+          
         </FlexBetween>
       </Toolbar>
     </AppBar>
