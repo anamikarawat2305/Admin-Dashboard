@@ -1,11 +1,11 @@
 # Admin-Dashboard
 
 # Run in server side
-cd ..
-cd server
-npm run start / npm run dev
+1. cd ..
+2. cd server
+3. npm run start / npm run dev
 
 # Run in client side
-cd ..
-cd client
-npm start
+1. cd ..
+2. cd client
+3. npm start
